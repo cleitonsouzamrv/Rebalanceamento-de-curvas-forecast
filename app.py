@@ -273,7 +273,7 @@ def main():
 
     if uploaded_file is not None:
         try:
-            df = pd.read_excel(uploaded_file, sheet_name="Base Principal")
+            df = pd.read_excel(uploaded_file, sheet_name="Base Principal", engine="openpyxl")
         except Exception as e:
             st.error(f"Erro ao ler a aba 'Base Principal': {e}")
             return
