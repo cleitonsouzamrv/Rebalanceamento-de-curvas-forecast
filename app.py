@@ -266,7 +266,7 @@ def salvar_em_xlsx(df):
 
 def main():
     """Função principal da aplicação Streamlit"""
-    st.title("Rebalanceamento de Curvas de Produção (Obra a Obra)")
+    st.title("Rebalanceamento de Curvas de Produção Forecast")
 
     # Upload do arquivo
     uploaded_file = st.file_uploader("Escolha o arquivo XLSX (Base Principal)", type=["xlsx"])
